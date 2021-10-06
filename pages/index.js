@@ -44,7 +44,7 @@ export default function Home({ blogs }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`http://localhost:1337/blogs`)
+  const res = await fetch(`https://morning-scrubland-44390.herokuapp.com/blogs`)
   const blogs = await res.json()
   return {
       props: {  // will be passed to the page component as props
